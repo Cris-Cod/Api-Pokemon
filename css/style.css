@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "lato-regular";
+    src: url('fonts/Lato-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /*background-color: #F16462;*/
+    background: linear-gradient(138deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(119, 0, 255, 1) 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 35%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    -webkit-box-shadow: 0px 2px 11px -1px rgba(51, 50, 51, 1);
+    -moz-box-shadow: 0px 2px 11px -1px rgba(51, 50, 51, 1);
+    box-shadow: 0px 2px 11px -1px rgba(51, 50, 51, 1);
+}
+
+.image img {
+    width: 250px;
+    margin: 12px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "lato-regular";
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.cargar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.busqueda {
+    margin: 10px 0px;
+}
+
+.busqueda input {
+    width: 200px;
+    padding: 6px 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 2px -1px rgba(51, 50, 51, 1);
+    -moz-box-shadow: 0px 2px 2px -1px rgba(51, 50, 51, 1);
+    box-shadow: 0px 2px 2px -1px rgba(51, 50, 51, 1);
+}
+
+.boton {
+    margin: 15px;
+}
+
+.boton input[type=submit] {
+    padding: 8px;
+    background-color: #F16462;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 2px -1px rgba(51, 50, 51, 1);
+    -moz-box-shadow: 0px 1px 2px -1px rgba(51, 50, 51, 1);
+    box-shadow: 0px 1px 2px -1px rgba(51, 50, 51, 1);
+}
+
+.resul {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.habilidades {
+    background-color: wheat;
+    padding: 5px 2px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.habilidades p {
+    font-size: 18px;
+    font-family: "lato-regular";
+    text-align: center;
+}
+
+.imagen {
+    margin: 25px;
+}
+
+.imagen img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+.nombre,
+.tipo,
+.altura,
+.peso,
+.numero {
+    background-color: wheat;
+    padding: 3px 2px;
+}
+
+.nombre h2 {
+    font-size: 24px;
+    font-family: "lato-regular";
+    text-align: center;
+}
+
+.tipo p,
+.altura p,
+.peso p,
+.numero p {
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: "lato-regular";
+}
+
+.error {
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-family: "lato-regular";
+    padding: 5px;
+    text-align: center;
+}
+
+
+/*Media Querys*/
+
+@media(max-width:700px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media(max-width:600px) {
+    .container {
+        width: 50%;
+    }
+    .habilidades p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:526px) {
+    .container {
+        width: 60%;
+    }
+    .habilidades p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:450px) {
+    .container {
+        width: 60%;
+    }
+    .habilidades p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:400px) {
+    .container {
+        width: 70%;
+    }
+    .habilidades p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:350px) {
+    .container {
+        width: 80%;
+    }
+    .habilidades p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:300px) {
+    .container {
+        width: 90%;
+    }
+    .habilidades p {
+        font-size: 16px;
+    }
+}
